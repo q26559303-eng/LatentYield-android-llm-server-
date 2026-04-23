@@ -6,6 +6,8 @@ LatentYield 将你的 Android 设备转变为一台私有的、高性能的大�
 
 **在手机上本地运行 GGUF 模型，无需云端，无需费用，无需担心隐私追踪。**
 
+国内用户网盘链接https://wwawx.lanzouw.com/b01bjd8uih 密码:fe0x
+
 ## ✨ 核心特性
 
 ### 🚀 高性能推理引擎
