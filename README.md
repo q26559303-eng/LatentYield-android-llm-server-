@@ -1,19 +1,4 @@
-[🇨🇳 中文](README_zh-CN.md) | [🇬🇧 English](README.md)
 
-# LatentYield
-... (下面是英文正文)
-
-
-为了让你的项目在 GitHub 上看起来更专业且具有吸引力，我为你编写了这份深度定制、极客感十足的英文版 README.md。
-
-它不仅涵盖了基础介绍，还深入到了技术细节（如 JNI 架构、NDK 编译、API 规范等），非常适合作为你的主展示页。
-
-💡 如何部署双语：
-将下方的英文内容存为：README.md
-
-将我上次发你的中文内容存为：README_zh-CN.md
-
-在两个文件的最顶部都加上切换链接：
 [🇨🇳 中文](README_zh-CN.md) | [🇬🇧 English](README.md)
 
 LatentYield
