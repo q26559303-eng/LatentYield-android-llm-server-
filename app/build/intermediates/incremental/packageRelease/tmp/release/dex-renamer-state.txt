@@ -1,0 +1,4 @@
+#Thu Apr 23 07:18:26 CST 2026
+base.0=D\:\\0APPCL\\AND-LLR-LOCAL\\AND\\LatentYield\\app\\build\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

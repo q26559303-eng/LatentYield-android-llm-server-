@@ -1,0 +1,4 @@
+com.localllm.server.test.app-androidTest-0 D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\build\generated\res\resValues\androidTest\debug
+com.localllm.server.test.app-mergeDebugAndroidTestResources-1 D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.localllm.server.test.app-mergeDebugAndroidTestResources-2 D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.localllm.server.test.app-debugAndroidTest-3 D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

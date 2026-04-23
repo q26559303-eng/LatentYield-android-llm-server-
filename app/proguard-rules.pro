@@ -1,0 +1,3 @@
+-keep class com.localllm.server.data.** { *; }
+-keep class com.localllm.server.service.** { *; }
+-dontwarn com.localllm.server.**

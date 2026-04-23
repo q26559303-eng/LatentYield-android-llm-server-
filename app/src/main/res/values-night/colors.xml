@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_main">#000000</color>
+    <color name="bg_card">#1C1C1E</color>
+    <color name="bg_terminal">#000000</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#98989D</color>
+    <color name="apple_blue">#0A84FF</color>
+    <color name="apple_green">#32D74B</color>
+    <color name="apple_red">#FF453A</color>
+    <color name="divider">#38383A</color>
+    <color name="terminal_text">#32D74B</color>
+    <color name="btn_surface_pressed">#2C2C2E</color>
+</resources>

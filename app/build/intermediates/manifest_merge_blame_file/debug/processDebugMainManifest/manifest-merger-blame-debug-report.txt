@@ -1,0 +1,261 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.localllm.server"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="29"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- 前台服务保活权限 -->
+12    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+12-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:6:5-77
+12-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:6:22-74
+13    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+13-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:7:5-87
+13-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:7:22-84
+14    <!-- Android 13+ 通知栏显示权限 -->
+15    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+15-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:9:5-77
+15-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:9:22-74
+16
+17    <!-- 允许应用访问网络（建立 localhost 绑定） -->
+18    <uses-permission android:name="android.permission.INTERNET" />
+18-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:12:5-67
+18-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:12:22-64
+19
+20    <permission
+20-->[androidx.core:core:1.13.1] C:\Users\zep1n\.gradle\caches\transforms-4\10d3cf15063af83d92d0f29962f16bbf\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+21        android:name="com.localllm.server.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+21-->[androidx.core:core:1.13.1] C:\Users\zep1n\.gradle\caches\transforms-4\10d3cf15063af83d92d0f29962f16bbf\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+22        android:protectionLevel="signature" />
+22-->[androidx.core:core:1.13.1] C:\Users\zep1n\.gradle\caches\transforms-4\10d3cf15063af83d92d0f29962f16bbf\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+23
+24    <uses-permission android:name="com.localllm.server.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+24-->[androidx.core:core:1.13.1] C:\Users\zep1n\.gradle\caches\transforms-4\10d3cf15063af83d92d0f29962f16bbf\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+24-->[androidx.core:core:1.13.1] C:\Users\zep1n\.gradle\caches\transforms-4\10d3cf15063af83d92d0f29962f16bbf\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+25
+26    <application
+26-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:14:5-81:19
+27        android:allowBackup="true"
+27-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:15:9-35
+28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+28-->[androidx.core:core:1.13.1] C:\Users\zep1n\.gradle\caches\transforms-4\10d3cf15063af83d92d0f29962f16bbf\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+29        android:dataExtractionRules="@xml/data_extraction_rules"
+29-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:16:9-65
+30        android:debuggable="true"
+31        android:extractNativeLibs="true"
+31-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:23:9-41
+32        android:fullBackupContent="@xml/backup_rules"
+32-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:17:9-54
+33        android:icon="@mipmap/ic_launcher"
+33-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:18:9-43
+34        android:label="@string/app_name"
+34-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:19:9-41
+35        android:roundIcon="@mipmap/ic_launcher_round"
+35-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:20:9-54
+36        android:supportsRtl="true"
+36-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:21:9-35
+37        android:testOnly="true"
+38        android:theme="@style/Theme.LatentYield"
+38-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:22:9-49
+39        android:usesCleartextTraffic="true" >
+39-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:24:9-44
+40        <activity
+40-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:27:9-70:20
+41            android:name="com.localllm.server.ui.MainActivity"
+41-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:28:13-44
+42            android:exported="true"
+42-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:29:13-36
+43            android:launchMode="singleTask"
+43-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:30:13-44
+44            android:theme="@style/Theme.LatentYield" >
+44-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:31:13-53
+45            <intent-filter>
+45-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:32:13-35:29
+46                <action android:name="android.intent.action.MAIN" />
+46-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:33:17-69
+46-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:33:25-66
+47
+48                <category android:name="android.intent.category.LAUNCHER" />
+48-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:34:17-77
+48-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:34:27-74
+49            </intent-filter>
+50
+51            <!-- 允许通过微信/文件管理器直接打开 GGUF -->
+52            <intent-filter>
+52-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:38:13-48:29
+53                <action android:name="android.intent.action.VIEW" />
+53-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:39:17-69
+53-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:39:25-66
+54
+55                <category android:name="android.intent.category.DEFAULT" />
+55-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:40:17-76
+55-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:40:27-73
+56                <category android:name="android.intent.category.BROWSABLE" />
+56-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:41:17-78
+56-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:41:27-75
+57
+58                <data android:scheme="file" />
+58-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:42:17-47
+58-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:42:23-44
+59                <data android:scheme="content" />
+59-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:42:17-47
+59-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:42:23-44
+60                <data android:host="*" />
+60-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:42:17-47
+60-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:44:23-39
+61                <data android:pathPattern=".*\\.gguf" />
+61-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:42:17-47
+61-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:45:23-54
+62                <data android:pathPattern=".*\\..*\\.gguf" />
+62-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:42:17-47
+62-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:45:23-54
+63                <data android:pathPattern=".*\\.GGUF" />
+63-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:42:17-47
+63-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:45:23-54
+64            </intent-filter>
+65
+66            <!-- 专门处理 QQ / 微信，它们通常分配 application/octet-stream 且丢失文件后缀 -->
+67            <intent-filter>
+67-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:51:13-55:29
+68                <action android:name="android.intent.action.VIEW" />
+68-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:39:17-69
+68-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:39:25-66
+69
+70                <category android:name="android.intent.category.DEFAULT" />
+70-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:40:17-76
+70-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:40:27-73
+71
+72                <data
+72-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:42:17-47
+73                    android:mimeType="application/octet-stream"
+73-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:54:48-91
+74                    android:scheme="content" />
+74-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:42:23-44
+75            </intent-filter>
+76
+77            <!-- 兼容识别为任意文件但仍保留后缀的弱智文件管理器 -->
+78            <intent-filter>
+78-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:58:13-62:29
+79                <action android:name="android.intent.action.VIEW" />
+79-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:39:17-69
+79-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:39:25-66
+80
+81                <category android:name="android.intent.category.DEFAULT" />
+81-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:40:17-76
+81-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:40:27-73
+82
+83                <data
+83-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:42:17-47
+84                    android:mimeType="*/*"
+84-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:54:48-91
+85                    android:pathPattern=".*\\.gguf"
+85-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:45:23-54
+86                    android:scheme="content" />
+86-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:42:23-44
+87            </intent-filter>
+88
+89            <!-- 允许外部应用通过分享（Share）发送文件 -->
+90            <intent-filter>
+90-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:65:13-69:29
+91                <action android:name="android.intent.action.SEND" />
+91-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:66:17-69
+91-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:66:25-66
+92
+93                <category android:name="android.intent.category.DEFAULT" />
+93-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:40:17-76
+93-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:40:27-73
+94
+95                <data android:mimeType="*/*" />
+95-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:42:17-47
+95-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:54:48-91
+96            </intent-filter>
+97        </activity>
+98
+99        <service
+99-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:72:9-75:40
+100            android:name="com.localllm.server.service.LlamaServerService"
+100-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:73:13-55
+101            android:exported="false"
+101-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:75:13-37
+102            android:foregroundServiceType="dataSync" />
+102-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:74:13-53
+103        <service
+103-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:77:9-80:40
+104            android:name="com.localllm.server.service.DaemonProxyService"
+104-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:78:13-55
+105            android:exported="false"
+105-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:80:13-37
+106            android:foregroundServiceType="dataSync" />
+106-->D:\0APPCL\AND-LLR-LOCAL\AND\LatentYield\app\src\main\AndroidManifest.xml:79:13-53
+107
+108        <provider
+108-->[androidx.emoji2:emoji2:1.3.0] C:\Users\zep1n\.gradle\caches\transforms-4\a767b05a254a538de5e727f1ff1c01dd\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+109            android:name="androidx.startup.InitializationProvider"
+109-->[androidx.emoji2:emoji2:1.3.0] C:\Users\zep1n\.gradle\caches\transforms-4\a767b05a254a538de5e727f1ff1c01dd\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+110            android:authorities="com.localllm.server.androidx-startup"
+110-->[androidx.emoji2:emoji2:1.3.0] C:\Users\zep1n\.gradle\caches\transforms-4\a767b05a254a538de5e727f1ff1c01dd\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+111            android:exported="false" >
+111-->[androidx.emoji2:emoji2:1.3.0] C:\Users\zep1n\.gradle\caches\transforms-4\a767b05a254a538de5e727f1ff1c01dd\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+112            <meta-data
+112-->[androidx.emoji2:emoji2:1.3.0] C:\Users\zep1n\.gradle\caches\transforms-4\a767b05a254a538de5e727f1ff1c01dd\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+113                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+113-->[androidx.emoji2:emoji2:1.3.0] C:\Users\zep1n\.gradle\caches\transforms-4\a767b05a254a538de5e727f1ff1c01dd\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+114                android:value="androidx.startup" />
+114-->[androidx.emoji2:emoji2:1.3.0] C:\Users\zep1n\.gradle\caches\transforms-4\a767b05a254a538de5e727f1ff1c01dd\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+115            <meta-data
+115-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\zep1n\.gradle\caches\transforms-4\42cc3e92fb826ec3b1b1df557fe7950b\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+116                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+116-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\zep1n\.gradle\caches\transforms-4\42cc3e92fb826ec3b1b1df557fe7950b\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+117                android:value="androidx.startup" />
+117-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\zep1n\.gradle\caches\transforms-4\42cc3e92fb826ec3b1b1df557fe7950b\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+118            <meta-data
+118-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\zep1n\.gradle\caches\transforms-4\1f95f3b31dad63f77f8bd9b979b9e5e5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+119                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+119-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\zep1n\.gradle\caches\transforms-4\1f95f3b31dad63f77f8bd9b979b9e5e5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+120                android:value="androidx.startup" />
+120-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\zep1n\.gradle\caches\transforms-4\1f95f3b31dad63f77f8bd9b979b9e5e5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+121        </provider>
+122
+123        <receiver
+123-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\zep1n\.gradle\caches\transforms-4\1f95f3b31dad63f77f8bd9b979b9e5e5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+124            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+124-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\zep1n\.gradle\caches\transforms-4\1f95f3b31dad63f77f8bd9b979b9e5e5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+125            android:directBootAware="false"
+125-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\zep1n\.gradle\caches\transforms-4\1f95f3b31dad63f77f8bd9b979b9e5e5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+126            android:enabled="true"
+126-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\zep1n\.gradle\caches\transforms-4\1f95f3b31dad63f77f8bd9b979b9e5e5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+127            android:exported="true"
+127-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\zep1n\.gradle\caches\transforms-4\1f95f3b31dad63f77f8bd9b979b9e5e5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+128            android:permission="android.permission.DUMP" >
+128-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\zep1n\.gradle\caches\transforms-4\1f95f3b31dad63f77f8bd9b979b9e5e5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+129            <intent-filter>
+129-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\zep1n\.gradle\caches\transforms-4\1f95f3b31dad63f77f8bd9b979b9e5e5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+130                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+130-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\zep1n\.gradle\caches\transforms-4\1f95f3b31dad63f77f8bd9b979b9e5e5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+130-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\zep1n\.gradle\caches\transforms-4\1f95f3b31dad63f77f8bd9b979b9e5e5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+131            </intent-filter>
+132            <intent-filter>
+132-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\zep1n\.gradle\caches\transforms-4\1f95f3b31dad63f77f8bd9b979b9e5e5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+133                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+133-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\zep1n\.gradle\caches\transforms-4\1f95f3b31dad63f77f8bd9b979b9e5e5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+133-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\zep1n\.gradle\caches\transforms-4\1f95f3b31dad63f77f8bd9b979b9e5e5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+134            </intent-filter>
+135            <intent-filter>
+135-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\zep1n\.gradle\caches\transforms-4\1f95f3b31dad63f77f8bd9b979b9e5e5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+136                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+136-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\zep1n\.gradle\caches\transforms-4\1f95f3b31dad63f77f8bd9b979b9e5e5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+136-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\zep1n\.gradle\caches\transforms-4\1f95f3b31dad63f77f8bd9b979b9e5e5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+137            </intent-filter>
+138            <intent-filter>
+138-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\zep1n\.gradle\caches\transforms-4\1f95f3b31dad63f77f8bd9b979b9e5e5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+139                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+139-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\zep1n\.gradle\caches\transforms-4\1f95f3b31dad63f77f8bd9b979b9e5e5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+139-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\zep1n\.gradle\caches\transforms-4\1f95f3b31dad63f77f8bd9b979b9e5e5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+140            </intent-filter>
+141        </receiver>
+142    </application>
+143
+144</manifest>

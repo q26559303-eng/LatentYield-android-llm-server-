@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.localllm.server.app-mergeDebugResources-30:/layout/view_chat_overlay.xml",
+        "source": "com.localllm.server.app-main-33:/layout/view_chat_overlay.xml"
+    },
+    {
+        "merged": "com.localllm.server.app-mergeDebugResources-30:/layout/activity_main.xml",
+        "source": "com.localllm.server.app-main-33:/layout/activity_main.xml"
+    }
+]

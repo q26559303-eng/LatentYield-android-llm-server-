@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LatentYield</string>
+    <string name="app_subtitle">Local Inference Node</string>
+    <string name="engine_model">ENGINE MODEL</string>
+    <string name="import_model">Import Model from Storage</string>
+    <string name="btn_execute">Execute</string>
+    <string name="btn_terminate">Terminate</string>
+    <string name="status_idle">Idle</string>
+    <string name="status_online">Online</string>
+    <string name="console_output">Console</string>
+    <string name="clear">Clear</string>
+    <string name="copy">Copy</string>
+    <string name="waiting_for_runtime">Waiting for runtime...</string>
+    <string name="no_models_detected">No Models Found</string>
+    <string name="warn_no_models">⚠️ No models detected.\nPlease place .gguf files in:\nAndroid/data/com.localllm.server/files/models/</string>
+    <string name="ok_detected_models">✅ Detected %d model(s).</string>
+    <string name="boot_sequence">Starting engine...\nTarget: %s\n</string>
+    <string name="toast_download_first">Please download and refresh models first</string>
+    <string name="toast_copied">Log copied to clipboard</string>
+    <string name="log_cleared">Log cleared...\n</string>
+    <string name="theme_to_dark">Dark</string>
+    <string name="theme_to_light">Light</string>
+    <string name="toggle_lang">EN / 中文</string>
+    <string name="notification_channel_name">Llama Server Service</string>
+    <string name="notification_channel_desc">Runs the LLM server in the background</string>
+    <string name="group_configuration">CONFIGURATION</string>
+    <string name="group_state">ENGINE STATE</string>
+    <string name="group_console">CONSOLE</string>
+    <string name="label_status">Status</string>
+    <string name="importing_title">Importing Model</string>
+    <string name="importing_msg">Copying %s to app storage. This might take a few minutes...</string>
+    <string name="toast_imported_success">Model imported successfully</string>
+    <string name="no_engine_found">No Engine Found</string>
+    <string name="refresh">Refresh</string>
+    <string name="auto_wake">Auto-Wake on Request</string>
+    <string name="group_chat">CHAT</string>
+    <string name="chat_waiting">AI response will appear here...</string>
+    <string name="chat_hint">Ask something...</string>
+    <string name="chat_send">Send</string>
+</resources>
