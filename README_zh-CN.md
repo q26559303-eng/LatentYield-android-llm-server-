@@ -100,6 +100,18 @@ cd LatentYield-android-llm-server-
 
 /app/src/main/cpp: 包含 C++ JNI 封装层与 llama.cpp 引擎代码。
 
+---
+
+## 📚 项目文档
+
+如果你希望深入了解项目的技术细节或将其集成到自己的应用中，请参阅以下详细文档：
+
+* **[开发者调用指南 (Developer Guide)](docs/API_CALL_GUIDE.md)**: 详细说明了如何从其他安卓应用或外部客户端调用本地 LLM 服务。
+* **[技术实现白皮书 (Whitepaper)](docs/ARCHITECTURE_AND_PLANNING.md)**: 深度剖析了项目的技术架构设计、实现细节以及未来的规划路线图。
+
+---
+
+
 🗺️ 未来路线图 (Roadmap)
 [ ] GPU 硬件加速支持 (Vulkan/OpenCL)。
 
