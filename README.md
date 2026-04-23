@@ -99,7 +99,16 @@ Project Structure
 /WebUI: Frontend source code (React/TS).
 
 /app/src/main/cpp: C++ JNI wrappers and llama.cpp integration.
+---
 
+## 📚 Documentation
+
+For deep technical insights and integration guides, please refer to our dedicated documentation:
+
+* **[Developer Integration Guide](docs/API_CALL_GUIDE.md)**: Detailed instructions on how to call the local LLM server from other Android apps or external clients.
+* **[Technical Whitepaper](docs/ARCHITECTURE_AND_PLANNING.md)**: A deep dive into the project's roadmap, architectural design, and technical implementation details.
+
+---
 🗺️ Roadmap
 [ ] GPU Acceleration (Vulkan/OpenCL) support.
 
