@@ -1,73 +1,62 @@
-
 [🇨🇳 中文](README_zh-CN.md) | [🇬🇧 English](README.md)
 
-LatentYield
-LatentYield is a high-performance, privacy-centric local Large Language Model (LLM) server for Android. It transforms your mobile device into a self-hosted AI inference node, supporting industry-standard GGUF models with an OpenAI-compatible API.
+# LatentYield —— A High-Performance Local LLM Server for Android
 
-Run GGUF models locally on Android with an OpenAI-compatible API. No cloud, no fees, no tracking.
+LatentYield turns your Android device into a private, high-performance inference node for Large Language Models. It natively supports industry-standard GGUF models and offers a fully OpenAI-compatible API.
 
-✨ Key Features
-🚀 High-Performance Inference
-Native Core: Powered by a custom-built llama.cpp C++ backend via JNI for near-native execution speed.
+**Run GGUF models locally on your phone — zero cloud, zero cost, zero tracking.**
 
-Hardware Acceleration: Optimized for ARM Neon and supports various quantization levels (K-Quants) to balance performance and RAM usage.
+## ✨ Key Features
 
-GGUF Ready: Seamlessly run Llama 3, Mistral, Gemma, Qwen, and any other model in the GGUF ecosystem.
+### 🚀 High-Performance Inference
+- **Native Core**: Leverages a custom-built `llama.cpp` C++ backend via JNI, delivering near-native execution speeds.
+- **Hardware Acceleration**: Optimized for ARM Neon and fully compatible with K-Quants quantization formats, striking an ideal balance between performance and memory usage.
+- **GGUF Ecosystem**: Ready to run Llama 3, Mistral, Gemma, Qwen, and virtually any model available in the GGUF format.
 
-🌐 Universal Connectivity
-OpenAI Compatible API: Drop-in replacement for OpenAI endpoints. Connect with apps like NextChat, Chatbox, or LobeChat by pointing the Base URL to your phone.
+### 🌐 Universal Connectivity
+- **OpenAI-Compatible API**: A drop-in replacement for OpenAI endpoints. Connect your favorite AI clients—like NextChat, Chatbox, or LobeChat—simply by pointing the base URL to your phone’s IP address.
+- **Built-in WebUI**: A modern, responsive chat interface accessible directly from your browser. Adjust temperature, top‑p, context length, and other parameters on the fly.
 
-Built-in WebUI: A modern, responsive web interface for direct chatting and model parameter tuning (temperature, top-p, context length).
+### 📱 Deep Android Integration
+- **Foreground Service**: The inference engine runs as a system-level foreground service. AI generation continues seamlessly even when you switch apps or lock the screen.
+- **File Association & Intent Routing**: Open `.gguf` files directly from WeChat, Telegram, or your file manager—LatentYield automatically imports the model.
+- **Zero‑Copy Content Provider**: Efficiently processes model file URIs from third‑party apps without duplicating precious storage space.
 
-📱 Android Integration
-Foreground Service: Ensures inference continues in the background even when you switch apps or lock the screen.
+## 🛠️ System Architecture
 
-File Association & Intent Routing: Directly click a .gguf file in WeChat, Telegram, or File Manager to import it into LatentYield instantly.
+LatentYield bridges raw C++ performance with a modern Android experience:
 
-Zero-Copy Content Provider: Efficiently handles model file URIs from third-party apps without unnecessary storage bloat.
+- **UI Layer**: Built with **Jetpack Compose** for a fluid, reactive, and native Android interface.
+- **Web Layer**: A lightweight embedded server hosts the **React / TypeScript** WebUI.
+- **Bridge Layer**: **JNI (Java Native Interface)** efficiently orchestrates data flow and memory between the Android JVM and the C++ engine.
+- **Inference Layer**: A specialized **llama.cpp** build optimized for the Android NDK environment.
 
-🛠️ System Architecture
-LatentYield bridges the gap between raw C++ performance and modern Android UI:
+## 🚀 Quick Start
 
-UI Layer: Built with Jetpack Compose for a fluid, reactive Android native experience.
+### Installation
+1. Go to the [Releases page](https://github.com/q26559303-eng/LatentYield-android-llm-server-/releases).
+2. Download the latest `app-release.apk` and install it on your device.
+3. On first launch, grant **“Manage all files”** permission (required to read multi‑gigabyte model files).
 
-Web Layer: A built-in server (Ktor/Express-like) hosting the React/TypeScript WebUI.
+### Importing Models
+- **Option A (Manual)**: Copy your `.gguf` model files into `Android/data/com.latent.yield/files/models`.
+- **Option B (Shortcut)**: In any app (e.g., WeChat), tap a `.gguf` file, choose **“Open with other app”**, and select **LatentYield**.
 
-Bridge Layer: JNI (Java Native Interface) orchestrating data flow between the Android JVM and the C++ engine.
+### Starting the Server
+1. Open LatentYield and select your imported model from the list.
+2. Adjust the **Context Size** according to your device’s available RAM (recommended: `2048` or `4096`).
+3. Tap **Start Server**.
+4. Access the WebUI at `http://localhost:8080` on your phone, or use your phone’s IP address from any device on the same local network.
 
-Inference Layer: A specialized build of llama.cpp optimized for Android NDK.
+## 🔗 API Documentation
 
-🚀 Quick Start
-Installation
-Navigate to the Releases page.
+LatentYield mimics the standard OpenAI API structure. Use any official or third‑party SDK (Python, JavaScript, Go, etc.) to interact with it.
 
-Download and install app-release.apk.
+### Chat Completions
+`POST /v1/chat/completions`
 
-Grant "Manage External Storage" permission to allow the app to read large model files.
-
-Importing Models
-Option A (Manual): Place your .gguf files in Android/data/com.latent.yield/files/models.
-
-Option B (Shortcut): In any app (like WeChat), click a .gguf file -> "Open with other app" -> Select LatentYield.
-
-Starting the Server
-Open LatentYield and select your model.
-
-Adjust Context Size (e.g., 2048 or 4096) based on your device's RAM.
-
-Tap Start Server.
-
-Access the WebUI via http://localhost:8080 on your phone, or via the device's IP from your PC.
-
-🔗 API Documentation
-LatentYield mimics the OpenAI API structure. You can use any standard SDK (Python, JS, Go).
-
-Chat Completions
-POST /v1/chat/completions
-
-Request Body:
-
-JSON
+**Example Request Body:**
+```json
 {
   "model": "local-gguf",
   "messages": [
@@ -77,53 +66,49 @@ JSON
   "stream": true,
   "temperature": 0.7
 }
-👨‍💻 For Developers
+```
+👨‍💻 Developer Guide
 Prerequisites
-Android Studio Ladybug or newer.
+Android Studio Ladybug or newer
 
-Android NDK (Side-by-side) 25.x or 26.x.
+Android NDK (Side‑by‑side) 25.x or 26.x
 
-CMake 3.22.1+.
+CMake 3.22.1+
 
 Build from Source
-Bash
+bash
 # Clone the repository
 git clone https://github.com/q26559303-eng/LatentYield-android-llm-server-.git
 cd LatentYield-android-llm-server-
 
-# Build the APK
+# Build the release APK
 ./gradlew assembleRelease
 Project Structure
-/app: Android Native UI and Service logic.
+/app – Android native UI and background service logic.
 
-/WebUI: Frontend source code (React/TS).
+/WebUI – Frontend source code (React / TypeScript).
 
-/app/src/main/cpp: C++ JNI wrappers and llama.cpp integration.
----
+/app/src/main/cpp – C++ JNI wrapper and llama.cpp engine integration.
 
-## 📚 Documentation
+📚 Documentation
+For in‑depth technical insights and integration guidance, please refer to:
 
-For deep technical insights and integration guides, please refer to our dedicated documentation:
+Developer Integration Guide – Detailed instructions for calling the local LLM server from other Android apps or external clients.
 
-* **[Developer Integration Guide](docs/API_CALL_GUIDE.md)**: Detailed instructions on how to call the local LLM server from other Android apps or external clients.
-* **[Technical Whitepaper](docs/ARCHITECTURE_AND_PLANNING.md)**: A deep dive into the project's roadmap, architectural design, and technical implementation details.
+Technical Whitepaper – A deep dive into the architecture, implementation details, and future roadmap.
 
----
 🗺️ Roadmap
-[ ] GPU Acceleration (Vulkan/OpenCL) support.
+GPU hardware acceleration support (Vulkan / OpenCL)
 
-[ ] Multi-modal support (Vision-LLM).
+Multi‑modal capabilities (Vision‑LLM)
 
-[ ] Integration with Tasker for automated AI workflows.
+Tasker integration for automated AI workflows on Android
 
-[ ] Local RDB (Vector Database) for long-term memory.
+Local vector database (RAG) for long‑term memory
 
 📄 License
-This project is licensed under the MIT License. See LICENSE for details.
+This project is licensed under the MIT License. See the LICENSE file for details.
 
 Developed with ❤️ by Zephyr Yang
-Found a bug? Open an Issue or submit a PR.
 
-
-
-其实我搞不明白英语 都是Gemini写的 非常感谢哈
+Found a bug or have a suggestion? Feel free to open an Issue or submit a Pull Request.
