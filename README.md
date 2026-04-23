@@ -109,6 +109,16 @@ Local vector database (RAG) for long‑term memory
 📄 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-Developed with ❤️ by Zephyr Yang
+---
+
+## 👤 Author & Contact
+
+**Zephyr Yang**
+
+- 💬 **WeChat**: `nonetude`
+- 🐛 **Issues**: [GitHub Issues](https://github.com/q26559303-eng/LatentYield-android-llm-server-/issues)
+- 💡 **Discussions**: [GitHub Discussions](https://github.com/q26559303-eng/LatentYield-android-llm-server-/discussions)
+
+*Developed with ❤️ by Zephyr Yang*
 
 Found a bug or have a suggestion? Feel free to open an Issue or submit a Pull Request.
