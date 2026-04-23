@@ -112,6 +112,16 @@ cd LatentYield-android-llm-server-
 📄 开源协议
 本项目基于 MIT License 开源。详情请参阅 LICENSE 文件。
 
-Developed with ❤️ by Zephyr Yang
+---
+
+## 👤 作者与联系
+
+**Zephyr Yang**
+
+- 💬 **微信**: `nonetude`
+- 🐛 **问题反馈**: [GitHub Issues](https://github.com/q26559303-eng/LatentYield-android-llm-server-/issues)
+- 💡 **讨论交流**: [GitHub Discussions](https://github.com/q26559303-eng/LatentYield-android-llm-server-/discussions)
+
+*Developed with ❤️ by Zephyr Yang*
 
 发现 Bug 或想要提出建议？欢迎提交 Issue 或 PR。
